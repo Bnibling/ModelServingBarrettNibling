@@ -1,11 +1,11 @@
 FROM python:3.7.6-stretch
 
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt /modelserving/requirements.txt
 
-WORKDIR /app
+WORKDIR /modelserving
 
 RUN pip install -r requirements.txt
 
-COPY . /app
+COPY . /modelserving
 
-ENTRYPOINT ["python3","app.py"]
+ENTRYPOINT ["python3","modelserving.py"]

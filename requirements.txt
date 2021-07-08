@@ -1,4 +1,3 @@
 flask
 requests
-tensorflow.keras
-sys
+tensorflow
